@@ -19,12 +19,18 @@ return {
         "vimwiki",
       },
       code = {
+        enabled = true,
+        sign = true,
         position = "left",
-        width = "block",
+        width = "full",
         language_pad = 0,
-        disable_background = {
-          "diff",
-        },
+        -- disable_background = {
+        -- "diff",
+        -- },
+        -- highlight for code blocks
+        highlight = "RenderMarkdownCode",
+        -- highlight for inline code
+        highlight_inline = "RenderMarkdownCodeInline",
       },
       sign = {
         -- Turn on / off sing rendering
@@ -39,7 +45,7 @@ return {
       indent = {
         -- Turn on / off org-indent-node
         enabled = true,
-
+        -- Amopunt of additional padding added for each heading level
         per_level = 2,
       },
     })
